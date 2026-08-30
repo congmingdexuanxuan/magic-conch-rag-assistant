@@ -1,0 +1,33 @@
+# Local secrets
+.env
+.env.*
+!.env.example
+!**/.env.example
+
+# Python
+**/.venv/
+**/__pycache__/
+**/*.py[cod]
+**/.pytest_cache/
+
+# Java
+**/target/
+**/*.class
+
+# Node.js
+**/node_modules/
+**/dist/
+**/dist-ssr/
+**/coverage/
+
+# IDE and OS files
+**/.idea/
+**/.vscode/
+*.iml
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
