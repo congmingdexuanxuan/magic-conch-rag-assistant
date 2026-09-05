@@ -47,3 +47,26 @@ Question Decomposition 相比 Single-query RAG，
 
 这些节点不会从正式 Agent 中删除，
 只是在独立的 evaluation 实验中暂时不调用。
+
+## 5. 实验假设
+
+### H1：组合问题
+
+对于包含多个相对独立信息目标的组合问题，
+Question Decomposition 能够提高证据覆盖率和答案完整性。
+
+### H2：简单事实问题
+
+对于只包含一个核心信息目标的简单事实问题，
+Question Decomposition 不会带来明显提升，
+并可能因为过度拆解而引入无关信息。
+
+### H3：多证据问题
+
+对于需要结合多个知识点才能完整回答的问题，
+Question Decomposition 更容易检索到所需的多份证据。
+
+### H4：系统成本
+
+Question Decomposition 会增加子问题生成、知识库检索次数和响应时间，
+因此效果提升需要与额外成本一起评价。
